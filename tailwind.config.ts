@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
+import withKIT from "@castrogarciajs/material";
 
-const config: Config = {
+const config = withKIT({
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,5 +16,6 @@ const config: Config = {
     },
   },
   plugins: [],
-};
+});
+
 export default config;
